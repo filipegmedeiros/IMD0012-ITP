@@ -1,0 +1,502 @@
+/*
+*                             IMD0012 - T03
+*                       ------------------------- 
+*                      LISTA 01 - EXERCICIO 01
+*                 -------------------------------------
+*                  https://github.com/filipegmedeiros
+*             ---------------------------------------------
+*/
+
+// A)
+    int c,var,v,number;
+
+// B)
+    int a;
+    printf("Entre com um valor inteiro:");
+    scanf("%d", &a);
+// C)
+    double  a;
+    printf("Entre com um valor decimal:\n");
+    scanf("%lf", &a);
+    ( a > 99 && a < 999 ) ?  printf("%04lf\n",a) : printf("Entre com um Valor do Formato XXX.YYYY");
+
+// D)
+    printf(" Meus primerios\n Programas em  C");
+
+// E)
+    printf(" Meus primerios Programas em  C");
+
+// F)
+    int x,y ;
+    float  z,resultado;
+    printf("entre com 2 valores inteiros e um decimal.:\n");
+    scanf(" %d %d %f", &x,&y,&z);
+    resultado = x*y*z;
+    printf("%f\n",resultado);
+
+/*
+*                             IMD0012 - T03
+*                       ------------------------- 
+*                      LISTA 01 - EXERCICIO 02
+*                 -------------------------------------
+*                  https://github.com/filipegmedeiros
+*             ---------------------------------------------
+*/
+
+// A)
+    scanf("%d", &valor );
+
+// B)
+    printf( "O produto de %d e %d é %d\n", x, y,z );
+// C)
+    soma = (var1 + var2);
+// D)
+    /* Esse deveria ser um comentário? */
+
+// E)
+    scanf("%f", &valor ); 
+
+// F)
+   printf( "Resto da divisão de %d por %d é %f\n", x, y,(x % y) );
+
+// G)
+   printf( "O valor da expressão é: %d\n". ( (val*val2)+(3+4) ) );
+
+// H)
+    if ( a > b ){ 
+       a = (b + a);
+    }
+//I)
+    if ( a != b){
+        a = (b + 1):     
+    }
+
+//J)
+     ( a && b ) ? ( b = 0 ) : ( b = 1 ) ;
+
+/*
+*                             IMD0012 - T03
+*                       ------------------------- 
+*                      LISTA 01 - EXERCICIO 03
+*                 -------------------------------------
+*                  https://github.com/filipegmedeiros
+*             ---------------------------------------------
+*/
+
+// A)
+   Resposta = ( 7 + (3 * ( 6 / 2 ) ) - 1 );
+   printf("%f", Resposta);
+
+// B)
+   Resposta =  ( ( 3 % 2 ) + ( 2 * 2 ) - ( 3 / 2 ) );
+   printf("%f", Resposta);
+
+// C)
+   Resposta = ( 3 * ( 9 * ( 3 + ( 8 ( 2 / 3 ) ) ) ) * ( 8 + ( 7 * 4) ) );
+   printf("%f", Resposta);
+
+// D)
+   Resposta = ( 7.5 * 4 ); 
+   printf("%f", Resposta);
+
+// E)
+   Resposta = ( 3 * ( ( pow(4,2) ) + 2 ) + ( pow(z,2) ) );
+   printf("%f", Resposta);
+
+// F)
+   Resposta =  ( x ( ( ( pow(y,2) / 2 ) ) + ( pow(z,4);
+   printf("%f", Resposta);
+
+// H)
+   Resposta = ( x + ( pow(y,2) )  / ( x * y ) );
+   printf("%f", Resposta);
+ 
+// I)
+   Resposta = ( ( sqrt( ( x + y) ) / ( x + ( pow(z,2)) ) ) );
+   printf("%f", Resposta);
+
+// J)
+   Resposta = 1 && 1 || 0
+   printf("%f", Resposta);
+
+// K)
+   Resposta = 1 && (a || b)
+   printf("%f", Resposta);
+
+// L)
+   Resposta = !b || a
+   printf("%f", Resposta);
+
+// M)
+   Resposta = a && b && a && b || b
+   printf("%f", Resposta);
+
+// N)
+   Resposta = 
+   printf("%f", Resposta);
+
+// O)
+   Resposta = z >= x || 1
+   printf("%f", Resposta);
+
+// P)
+   Resposta = y = x || y = z || y > 10
+   printf("%f", Resposta);
+
+/*
+*                             IMD0012 - T03
+*                       ------------------------- 
+*                      LISTA 01 - EXERCICIO 04
+*                 -------------------------------------
+*                  https://github.com/filipegmedeiros
+*             ---------------------------------------------
+*/
+// A)
+	printf("1,2,3,4");
+// B)
+	printf("1\n2\n3\n4\n);
+// C)
+	int a = 1, b = 2, c = 3, d = 4;
+	printf("%d %d %d %d",a,b,c,d);
+
+/*
+*                             IMD0012 - T03
+*                       ------------------------- 
+*                      LISTA 01 - EXERCICIO 05
+*                 -------------------------------------
+*                  https://github.com/filipegmedeiros
+*             ---------------------------------------------
+*/
+
+#include <stdio.h>
+
+int main(void){
+    float maior,decimal1, decimal2, decimal3 ;
+//A)
+    printf("Entre com 3 números decimais\n");
+    scanf("%f %f %f", &decimal1,&decimal2,&decimal3);
+    
+//B)
+    if ( decimal1 == decimal2 == decimal3 ){
+        printf("Os 3 números são iguais");
+//C)
+    }else if( (decimal1 > decimal2) && (decimal1 > decimal3) ){
+        maior = (decimal1);
+
+    }else if( (decimal2 > decimal1) && (decimal2 > decimal3) ){ 
+         maior = (decimal2);
+
+    }else if( (decimal3 > decimal1) && (decimal3 > decimal2) ){ 
+         maior = (decimal3);
+    }
+    printf("O maior é: %f\n",maior);
+    return 0;
+}
+/*
+*                             IMD0012 - T03
+*                       ------------------------- 
+*                      LISTA 01 - EXERCICIO 06
+*                 -------------------------------------
+*                  https://github.com/filipegmedeiros
+*             ---------------------------------------------
+*/
+#include <stdio.h>
+#include <math.h>
+
+// Não esquecer de linkar a lib do math no gcc com (-lm)
+int main(void){
+    int diam, comp, area, raio;
+//A)
+    printf("Entre com o raio do círculo\n");
+    scanf("%d", &raio);
+//B)
+    diam = (raio*2);
+    comp = (M_PI*diam);
+    area = (M_PI*(pow(raio,2)));
+//C)
+    printf("O Diametro é: %d e o comprimento é %d, por fim, a área é %d\n",diam,comp,area);
+    
+    return 0;
+}
+/*
+*                             IMD0012 - T03
+*                       ------------------------- 
+*                      LISTA 01 - EXERCICIO 07
+*                 -------------------------------------
+*                  https://github.com/filipegmedeiros
+*             ---------------------------------------------
+*/
+
+#include <stdio.h>
+
+int main(void){
+    int a,b,c,d;
+    scanf("%d %d %d %d",&a,&b,&c,&d);
+    (a % 2) ? printf(" O Valor %d é impar\n",a) : printf(" O valor %d é par\n",a); 
+    (b % 2) ? printf(" O Valor %d é impar\n",b) : printf(" O valor %d é par\n",b); 
+    (c % 2) ? printf(" O Valor %d é impar\n",c) : printf(" O valor %d é par\n",c); 
+    (d % 2) ? printf(" O Valor %d é impar\n",d) : printf(" O valor %d é par\n",d); 
+
+    return 0;
+}
+/*
+*                             IMD0012 - T03
+*                       ------------------------- 
+*                      LISTA 01 - EXERCICIO 08
+*                 -------------------------------------
+*                  https://github.com/filipegmedeiros
+*             ---------------------------------------------
+*/
+#include <stdio.h>
+
+int main(void){
+    int a,b;
+    scanf("%d %d",&a,&b);
+    (a % b) ? printf("O Valor %d não é múltiplo de %d\n",a,b) : printf("O Valor %d é múltiplo de %d\n",a,b); 
+     
+return 0;
+}
+/*
+*                             IMD0012 - T03
+*                       ------------------------- 
+*                      LISTA 01 - EXERCICIO 09
+*                 -------------------------------------
+*                  https://github.com/filipegmedeiros
+*             ---------------------------------------------
+*/
+
+#include <stdio.h>
+
+int main(void){
+    int a,i;
+    int vetor[7] = {0};
+    printf("Entre com um valor\n");
+    scanf("%d",&a);
+
+    while ( (a > 0) && (a <= 1000000)){
+         printf("%d\n",a % 10);
+         a = (a/10);
+
+    }
+
+
+
+  return 0;
+}
+/*
+*                             IMD0012 - T03
+*                       ------------------------- 
+*                      LISTA 01 - EXERCICIO 10
+*                 -------------------------------------
+*                  https://github.com/filipegmedeiros
+*             ---------------------------------------------
+*/
+
+#include <stdio.h>
+
+int main(void){
+    int x=0, y=0;
+    printf("Escreva o valor de X ");
+    scanf("%d", &x);
+
+// Criando a Tabela
+    printf("\n(y-2)^2 \t (y-1)^2 \t y \t (y+1)^2 \t (y+2)^2");
+
+    for(int i = -2; i <= 2; i++){
+        y = (x + i);
+
+        printf("\n  %d",( (y-2)*(y-2) ) );
+        printf("\t\t  %d",( (y-1)*(y-1) ) );
+        printf("\t\t %d", y);
+        printf("\t  %d",( (y+2)*(y+2) ) );
+        printf("\t\t  %d",( (y+1)*(y+1) ) );
+    }
+    return 0;
+}
+
+/*
+*                             IMD0012 - T03
+*                       ------------------------- 
+*                      LISTA 01 - EXERCICIO 11
+*                 -------------------------------------
+*                  https://github.com/filipegmedeiros
+*             ---------------------------------------------
+*/
+
+#include <stdio.h>
+
+int main(void){
+    char *q="\
+*********\n\
+*       *\n\
+*       *\n\
+*       *\n\
+*       *\n\
+*       *\n\
+*       *\n\
+*       *\n\
+*********\n\
+";
+
+   char *c="\
+   ***\n\
+ *     *\n\
+*       *\n\
+*       *\n\
+*       *\n\
+*       *\n\
+*       *\n\
+ *     *\n \
+  ***\n\
+";
+
+    char *s="\
+\n  *\n\
+   ***\n\
+  *****\n\
+    *\n\
+    *\n\
+    *\n\
+    *\n\
+    *\n\
+    *\n\
+";
+    char *d="\
+\n     *\n\
+      * *\n\
+     *   *\n\
+    *     *\n\
+   *       *\n\
+    *     *\n\
+     *   *\n\
+      * *\n\
+       *\n\
+";
+    char entrada;
+    printf("digite q, c, s ou d: ");
+    scanf("%c", &entrada);
+
+    switch(entrada){
+        case 'q':
+             printf("%s", q);
+             break;
+        case 'c':
+            printf("%s", c);
+            break;
+        case 's':
+            printf("%s", s);
+            break;
+        case 'd':
+            printf("%s", d);
+            break;
+        default:
+            printf("opção invalida");
+    }
+    return 0;
+}
+/*
+*                             IMD0012 - T03
+*                       ------------------------- 
+*                      LISTA 01 - EXERCICIO 12
+*                 -------------------------------------
+*                  https://github.com/filipegmedeiros
+*             ---------------------------------------------
+*/
+#include <stdio.h>
+#include <math.h>
+
+void switch_opA(void){
+    float a, b;
+    char resp;
+
+    printf("Escolha a operação  aritimética d,m,a,i: \n");
+    scanf(" %c",&resp);
+
+    printf("Escolha dois numeros: \n");
+    scanf(" %f %f", &a, &b);
+
+    switch(resp){
+        float result;
+      
+      case 'a': // Adição
+         result = a + b;
+         printf("o resultado da soma de %0.1f mais %0.1f é: %0.1f\n", a, b, result);
+         break;
+         
+		  case 's': // Subtração
+         result = a - b;
+         printf("o resultado da subtração de %0.1f menos %0.1f é: %0.1f\n", a, b, result);
+         break;
+         
+       case 'd': // Divisão
+         result = a / b;
+         printf("o resultado da divisão de %0.1f por %0.1f é: %0.1f\n", a, b, result);
+          break;
+          
+      case 'm': // Multiplicação
+         result = a * b;
+         printf("o resultado da multiplicação de %0.1f vezes %0.1f é: %0.1f\n", a, b, result);
+         break;
+         
+       default:
+        printf("Opção Inválida\n");
+         break;
+    }
+}
+
+void switch_opL(void){
+     int a, b;
+     char resp;
+
+    printf("Escolha a operação  lógica a,x,o,n: \n");
+    scanf(" %c",&resp);
+    printf("Escolha dois numeros: \n");
+    scanf(" %d %d", &a, &b);
+
+    switch(resp){
+        int result;
+       
+        case 'a': // a = a && b
+            result = a & b;
+			printf("A: %0.1d && B: %0.1d é: %0.1d\n", a, b, result);
+			break;
+			
+		case 'x': // x = A xor B
+        result = a ^ b ;
+        printf("A: %0.1d ^ B: %0.1d é: %0.1d\n", a, b, result);
+        break;
+        
+		case 'o': // o = A || B
+        result = a | b;
+        printf("A: %0.1d || B: %0.1d é: %0.1d\n", a, b, result);
+        break;
+        
+		case 'n': // n = A nand B
+       result = ~(a & b) || (~a | ~b);
+       printf("A: %0.1d ~(a & b) || (~a | ~b) B: %0.1d é: %0.1d\n", a, b, result);
+       break;
+       
+     default:
+       printf("Opção Inválida\n");
+       break;
+    }
+}
+
+int main(void){
+    char op;
+
+    printf ("Escolha a ou l\n");
+    scanf(" %c", &op);
+
+    switch(op){
+        case 'a':
+           switch_opA();
+           break;
+        case 'l': 
+           switch_opL();
+           break;
+        default:
+           printf("Opção Inválida\n");
+    }
+    return 0;
+}

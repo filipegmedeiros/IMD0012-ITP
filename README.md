@@ -4,6 +4,12 @@
 
                          ```  Dotfiles do @usuariolinux   ```                 
                         ``` Copie, altere, arrume e use``` 
+<p align="center">
+    <a href="https://github.com/filipegmedeiros/MD0012-ITP/blob/master/LICENSE">
+        <img src="https://img.shields.io/github/license/filipegmedeiros/github_django_ticket.svg?longCache=true&style=for-the-badge"
+             alt="License" /></a>
+</p>
+
 
 
 ---------------------------------------------------------------------------------------------------------------------------------

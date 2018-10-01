@@ -53,7 +53,7 @@
 | • [24/09/18 - Recursividade](https://github.com/filipegmedeiros/IMD0012-ITP/tree/master/Unidade02/Aulas/24set/)         |
 | • [26/09/18 - Alocação Dinamica](https://github.com/filipegmedeiros/IMD0012-ITP/tree/master/Unidade02/Aulas/26set/)     |
 | • [28/09/18 - Linked List](https://github.com/filipegmedeiros/IMD0012-ITP/tree/master/Unidade02/Aulas/28set/)           |
-| • [28/09/18 - Linked List](https://github.com/filipegmedeiros/IMD0012-ITP/tree/master/Unidade02/Aulas/01out/)           |
+| • [01/10/18 - ????](https://github.com/filipegmedeiros/IMD0012-ITP/tree/master/Unidade02/Aulas/01out/)           |
 
 | **Faltas:**           | 
 | --------------------- |

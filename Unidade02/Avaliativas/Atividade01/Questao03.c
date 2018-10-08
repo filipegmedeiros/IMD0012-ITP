@@ -1,34 +1,104 @@
 /*
  *                             IMD0012 - T03
  *                       ------------------------- 
- *                      LISTA 04 - EXERCICIO 01
+ *                      LISTA 04 - EXERCICIO 03
  *                 -------------------------------------
  *                  https://github.com/filipegmedeiros
  *             ---------------------------------------------
  */
-int main(int argc, char *argv[]) {
-    int somaprod;
-    int mat1[3][3]={{1,2,3},{4,5,6},{7,8,9}};
-    int mat2[3][3]={{1,0,0},{0,1,0},{0,0,1}};
-    int mat3[3][3];
-    int linha=3, coluna=3;
+#include <stdlib.h>
+#include <stdio.h>
 
-    for(int i =0; i <linha; i++)
-        for(int j =0; j <coluna ; j ++){
-            somaprod=0;
-            for(int k=0; k<linha ; k++){
-                somaprod+=mat1[i][j]*mat2[k][j];
-                mat3[i][j]=somaprod;
+typedef struct matriz{
+
+    int** __matriz__;
+    int linha;
+    int coluna;
+} matriz;
+
+void criar_matriz(matriz* matriz, int linha, int coluna){
+
+    matriz -> linha = linha;
+    matriz -> coluna = coluna;
+    matriz -> __matriz__ = calloc(linha, sizeof(int*));
+
+    for(int i = 0; i < linha ; i++)
+        matriz -> __matriz__[i] = calloc(coluna, sizeof(int*));
+}
+
+
+void mat_mult(matriz* matriz_a, matriz* matriz_b, matriz* matriz_resultado){
+    if( (matriz_a -> coluna) != (matriz_b -> linha) ) {
+        printf("É necessário que o número de colunas da matriz 1 seja igual ao número de linhas da matriz 2 ");
+        exit(-1);
+    }
+
+    for(int i = 0; i < matriz_a -> linha; i++){
+        for(int j = 0; j < matriz_b -> coluna; j++){
+            for(int k = 0; k < matriz_a -> coluna; k++){
+                matriz_resultado -> __matriz__[i][j] += (matriz_a -> __matriz__[i][k]) * (matriz_b -> __matriz__[k][j]);
             }
         }
-    //
-    //imprime mat3
-    //
-    for(int i =0; i <linha; i++){
-        for(int j =0; j <coluna ; j ++){
-            printf("%d ", mat3[i][j]);
+    } 
+}
+int main(void){
+    int lin1, col1;
+    int lin2, col2;
+    printf("Entre com a quantidade de linhas e colunas da Matriz 1:\n");
+    scanf(" %d %d", &lin1, &col1);
+
+    printf("Entre com a quantidade de linhas e colunas da Matriz 2:\n");
+    scanf(" %d %d", &lin2, &col2);
+
+    matriz* matriz_a = malloc(sizeof(matriz));
+    matriz* matriz_b = malloc(sizeof(matriz));
+    matriz* matriz_resultado = malloc(sizeof(matriz));
+
+    criar_matriz(matriz_a, lin1, col1);
+    criar_matriz(matriz_b, lin2, col2);
+    criar_matriz(matriz_resultado, lin1, col2);
+
+    for(int i = 0; i < matriz_a -> linha; i++){
+        for(int j = 0; j < matriz_a -> coluna; j++){
+            matriz_a -> __matriz__[i][j] = rand() % 10 ;
+        }
+    }    
+
+    for(int i = 0; i < matriz_b -> linha; i++){
+        for(int j = 0; j < matriz_b -> coluna; j++){
+            matriz_b -> __matriz__[i][j] = rand() % 10 ;
+        }
+    }
+
+    printf("\nA matriz A: \n");
+    for(int i = 0; i < matriz_a -> linha; i++){
+        for(int j = 0; j < matriz_a -> coluna; j++){
+            printf("%d ", matriz_a -> __matriz__[i][j]);
         }
         printf("\n");
     }
+    printf("\nA matriz B: \n");
+
+    for(int i = 0; i < matriz_b -> linha; i++){
+        for(int j = 0; j < matriz_b -> coluna; j++){
+            printf("%d ", matriz_b -> __matriz__[i][j]);
+        }
+        printf("\n");
+    }
+    printf("\nA matriz A * B: \n");    
+
+    mat_mult(matriz_a, matriz_b, matriz_resultado);
+    for(int i = 0; i < matriz_resultado -> linha; i++){
+        for(int j = 0; j < matriz_resultado -> coluna; j++){
+            printf("%d ", matriz_resultado ->__matriz__[i][j]);
+        }
+        printf("\n");
+    }
+    free(matriz_a);
+    free(matriz_b);
+    free(matriz_resultado);
     return 0;
 }
+
+
+

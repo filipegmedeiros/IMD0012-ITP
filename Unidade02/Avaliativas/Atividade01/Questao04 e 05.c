@@ -1,7 +1,7 @@
 /*
  *                             IMD0012 - T03
  *                       ------------------------- 
- *                      LISTA 04 - EXERCICIO 01 e 02
+ *                      LISTA 04 - EXERCICIO 03
  *                 -------------------------------------
  *                  https://github.com/filipegmedeiros
  *             ---------------------------------------------
@@ -16,19 +16,20 @@ typedef struct matriz{
     int coluna;
 } matriz;
 
+
 void criar_matriz(matriz* matriz, int linha, int coluna){
 
     matriz -> linha = linha;
     matriz -> coluna = coluna;
     matriz -> __matriz__ = calloc(linha, sizeof(int*));
 
-    for(int i = 0; i < linha ; i++)
+    for(int i = 0; i < linha ; i++){
         matriz -> __matriz__[i] = calloc(coluna, sizeof(int*));
+    }
 }
 
 
 void mat_mult(matriz* matriz_a, matriz* matriz_b, matriz* matriz_resultado){
-    int soma;
     if( (matriz_a -> coluna) != (matriz_b -> linha) ) {
         printf("É necessário que o número de colunas da matriz 1 seja igual ao número de linhas da matriz 2 ");
         exit(-1);

@@ -54,6 +54,7 @@
 | • [26/09/18 - Alocação Dinamica](https://github.com/filipegmedeiros/IMD0012-ITP/tree/master/Unidade02/Aulas/26set/)     |
 | • [28/09/18 - Linked List](https://github.com/filipegmedeiros/IMD0012-ITP/tree/master/Unidade02/Aulas/28set/)           |
 | • [01/10/18 - ????](https://github.com/filipegmedeiros/IMD0012-ITP/tree/master/Unidade02/Aulas/01out/)           |
+| • [08/10/18 - Recursividade Prática](https://github.com/filipegmedeiros/IMD0012-ITP/tree/master/Unidade02/Aulas/08out/)           |
 
 | **Faltas:**           | 
 | --------------------- |

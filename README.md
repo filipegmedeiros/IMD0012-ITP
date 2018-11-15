@@ -39,7 +39,7 @@
 | ---------------------                                                                                                   |
 | • [Primeira Atividade](https://github.com/filipegmedeiros/IMD0012-ITP/tree/master/Unidade02/Avaliativas/Atividade01)    | 
 | • [Segunda Atividade](https://github.com/filipegmedeiros/IMD0012-ITP/tree/master/Unidade02/Avaliativas/Atividade02)     |
-| • [Terceira Atividade](https://github.com/filipegmedeiros/IMD0012-ITP/tree/master/Unidade02/Avaliativas/Atividade02)    | 
+| • [Terceira Atividade](https://github.com/filipegmedeiros/IMD0012-ITP/tree/master/Unidade02/Avaliativas/Atividade03)    | 
 
 **AULAS:**                                                                                                                | 
 | ---------------------                                                                                                   |

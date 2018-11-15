@@ -37,11 +37,11 @@
   
 | **ATIVIDADES AVALIATIVAS:**                                                                                             | 
 | ---------------------                                                                                                   |
-| • [Primeira Atividade](https://github.com/filipegmedeiros/IMD0012-ITP/tree/master/Unidade02/Atividade01)                |
-| • [Segunda Atividade](https://github.com/filipegmedeiros/IMD0012-ITP/tree/master/Unidade02/Atividade02)                 |
+| • [Primeira Atividade](https://github.com/filipegmedeiros/IMD0012-ITP/tree/master/Unidade02/Avaliativas/Atividade01)    | 
+| • [Segunda Atividade](https://github.com/filipegmedeiros/IMD0012-ITP/tree/master/Unidade02/Avaliativas/Atividade02)     |
+| • [Terceira Atividade](https://github.com/filipegmedeiros/IMD0012-ITP/tree/master/Unidade02/Avaliativas/Atividade02)    | 
 
-
-| **AULAS:**                                                                                                              | 
+**AULAS:**                                                                                                                | 
 | ---------------------                                                                                                   |
 | • [12/09/18 - Struct](https://github.com/filipegmedeiros/IMD0012-ITP/tree/master/Unidade02/Aulas/12set/)                |
 | • [24/09/18 - Recursividade](https://github.com/filipegmedeiros/IMD0012-ITP/tree/master/Unidade02/Aulas/24set/)         |

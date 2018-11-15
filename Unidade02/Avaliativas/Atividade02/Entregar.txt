@@ -1,0 +1,338 @@
+/*
+ *                             IMD0012 - T03
+ *                       ------------------------- 
+ *                      LISTA 05 - EXERCICIO 01
+ *                 -------------------------------------
+ *                  https://github.com/filipegmedeiros
+ *             ---------------------------------------------
+ */
+#include <stdio.h>
+#include <string.h>
+
+
+int tamanho(char *string){
+    int size;
+    size = strlen(string);
+    sprintf(string, "%d", size);
+    return string;
+}
+
+int compara(char *stringA, char *stringB){
+    strcmp(stringA, stringB) == 0 ? (printf(" 1") ) : printf("0");
+}
+
+void copia(char *dest, char *base){
+    strcpy(dest, base);
+}
+
+
+
+int main(void){
+
+char *entrada = "Eu sou eu"
+char *saida = "Eu sou eu"
+
+copia(entrada, saida);
+compara(entrada,saida)
+tamanho(entrada);
+
+
+return 0;
+}
+/*
+ *                             IMD0012 - T03
+ *                       ------------------------- 
+ *                      LISTA 05 - EXERCICIO 02
+ *                 -------------------------------------
+ *                  https://github.com/filipegmedeiros
+ *             ---------------------------------------------
+ */
+
+
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+#include <stdlib.h>
+
+int isNumber(char*);
+void toLower(char*, char*);
+void toLowerUper(char*, char*);
+
+int main(int argc, char const *argv[]){
+    
+    char* buff = malloc(1);
+    char* test = "AdCs zXc";
+
+    printf("0, %d\n", isNumber("abdc"));
+    printf("1, %d\n", isNumber("123"));
+    printf("1, %d\n", isNumber("1.23"));
+    toLower(test, buff);
+    printf("adcs zxc, %s\n", buff);
+    toLowerUper(test, buff);
+    printf("Adcs Zxc, %s\n", buff);
+
+    return 0;
+}
+
+int isNumber(char* str){
+    int i;
+    for(i = 0; i < strlen(str); ++i)
+        if(isdigit(str[i]) || str[i] == '.') continue; else break;
+    if (i == strlen(str)) return 1;
+    return 0;
+}
+
+void toLower(char* src, char* dest){
+    dest = realloc(dest, strlen(src) * sizeof(char));
+    int i;
+    for (i = 0; i < strlen(src); ++i)
+        dest[i] = tolower(src[i]);
+    dest[strlen(src)] = '\0';
+}
+
+void toLowerUper(char* src, char* dest){
+    dest = realloc(dest, strlen(src) * sizeof(char));
+    int i = 0;
+    dest[i] = toupper(src[i]);
+    for (i = 0; i < strlen(src); ++i){
+        if (src[i++] == ' '){
+            dest[i - 1] = ' ';
+            dest[i] = toupper(src[i]);
+        } else
+            dest[i] = tolower(src[i]);
+    }
+    dest[strlen(src)] = '\0';
+}/*
+ *                             IMD0012 - T03
+ *                       ------------------------- 
+ *                      LISTA 05 - EXERCICIO 03
+ *                 -------------------------------------
+ *                  https://github.com/filipegmedeiros
+ *             ---------------------------------------------
+ */
+
+#include <stdio.h>
+#include <string.h>
+#include <string.h>
+#include <ctype.h>
+
+int posicao(char *string){
+    int num1, num2, contador,w;
+    char op1, op2;
+
+
+    w=0;
+    while(string[w]!= '\0'){
+        if(!(isdigit(string[w])) && !(isspace(string[w]))){
+            contador++;
+        }
+        w++;
+    }
+    if(contador == 1){
+        sscanf(string, "%i %c %i", &num1, &op1, &num2);
+        if(op1=='>'){
+            if(num1>num2)
+                return 1;}
+        else
+            return 0;
+    }
+
+    if(contador == 2){
+        sscanf(string, "%i %c %c %i", &num1, &op1, &op2, &num2);
+        if(op1=='>'){
+            if(num1>=num2)
+                return 1;}
+        else
+            return 0;
+    }
+
+}
+
+
+void pessoaToString (char *nome, int idade, char sexo, char *dest){
+    sprintf(dest, "Meu nome e %s, minha idade e %i e meu sexo e %c", nome, idade, sexo);
+}
+void intVecToString(int tam, int vec[tam], char *dest){
+    char destiny[50];
+
+    for(int i=0;i<tam;i++){
+        sprintf(destiny, "%d", vec[i]);
+        dest[i] = *destiny;
+    }
+}
+int posicao(char *string){
+    int num1, num2, contador,w;
+    char op1, op2;
+
+
+    w=0;
+    while(string[w]!= '\0'){
+        if(!(isdigit(string[w])) && !(isspace(string[w]))){
+            contador++;
+        }
+        w++;
+    }
+    if(contador == 1){
+        sscanf(string, "%i %c %i", &num1, &op1, &num2);
+        if(op1=='>'){
+            if(num1>num2)
+                return 1;}
+        else
+            return 0;
+    }
+    if(contador == 2){
+        sscanf(string, "%i %c %c %i", &num1, &op1, &op2, &num2);
+        if(op1=='>'){
+            if(num1>=num2)
+                return 1;}
+        else
+            return 0;
+    }
+
+}
+
+
+void pessoaToString (char *nome, int idade, char sexo, char *dest){
+    sprintf(dest, "Meu nome e %s, minha idade e %i e meu sexo e %c", nome, idade, sexo);
+}
+
+
+void intVecToString(int tam, int vec[tam], char *dest){
+    char destiny[50];
+
+    for(int i=0;i<tam;i++){
+        sprintf(destiny, "%d", vec[i]);
+        dest[i] = *destiny;
+    }
+}
+int main(void){
+    char linha[] = "20 < 18";
+    int retorno = posicao(linha);
+    printf("%i", retorno);
+    int size = 4;
+    int vector[] = {1,2,3,4};
+    char vetor[size];
+
+    intVecToString(size, vector, vetor);
+    char linha[] = "20 < 18";
+    int retorno = posicao(linha);
+    printf("%i\n", retorno);
+
+    char name[]="Leandro";
+    int age = 25;
+    char gender='m';
+    char phrase[50];
+    pessoaToString(name, age, gender, phrase);
+    printf("%s\n", phrase);
+
+
+    int size = 4;
+    int vector[] = {1,2,3,4};
+    char vetor[size];
+
+    intVecToString(size, vector, vetor);
+
+    printf("[%s]", vetor);
+    printf("[%s]", vetor);
+
+}
+
+
+
+/*
+ *                             IMD0012 - T03
+ *                       ------------------------- 
+ *                      LISTA 05 - EXERCICIO 04
+ *                 -------------------------------------
+ *                  https://github.com/filipegmedeiros
+ *             ---------------------------------------------
+ */
+
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+#include <stdlib.h>
+#include <stdbool.h>
+
+void sortString(char**, char**);
+void subString(char*, int, int, char*);
+void swap(char*, char*);
+
+int main(int argc, char const *argv[]){
+    
+    char* test = "asd cxz asd";
+    char* buff = malloc(2);
+    char* words[] = {
+        "H Ok", 
+        "B Ok", 
+        "F Ok", 
+        "I Ok", 
+        "G Ok", 
+        "D Ok", 
+        "C Ok", 
+        "E Ok", 
+        "J Ok", 
+        "A Ok"
+    };
+    char** sorted;
+
+    subString(test, 2, 5, buff);
+    printf("d cx, %s\n", buff);
+    sortString(words, sorted);
+    for (int i = 0; i < sizeof(words) / sizeof(char*); ++i)
+        printf("%s\n", words[i]);
+
+    return 0;
+}
+
+void sortString(char** strings, char** sorted){
+    sorted = malloc(sizeof(strings));
+
+    for (int i = 0; i <= sizeof(strings); ++i){
+        bool swapped = false;
+        for (int j = 0; j <= sizeof(strings); ++j){
+            if (strcmp(strings[j], strings[j+1]) > 0){
+                char* temp = strings[j];
+                strings[j] = strings[j+1];
+                strings[j+1] = temp;
+                swapped = true;
+            }
+        }
+        if (!swapped) break;
+    }
+}
+
+void subString(char* src, int start, int end, char* substring){
+    int j = 0;
+    substring = realloc(substring, (end - start + 1) * sizeof(char));
+    for (int i = start; i <= end; ++i){
+        substring[j] = src[i];
+        j++;
+    }
+    substring[j] = '\0';
+}
+
+/*
+ *                             IMD0012 - T03
+ *                       ------------------------- 
+ *                      LISTA 05 - EXERCICIO 05
+ *                 -------------------------------------
+ *                  https://github.com/filipegmedeiros
+ *             ---------------------------------------------
+ */
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+
+int  prefix(const char *src, const char *starting) {
+    return strncmp(src, starting, strlen(src)) == 0;
+}
+
+int endsWith(const char *src, const char *ending) {
+  int src_len = strlen(src);
+  int ending_len = strlen(ending);
+
+  return
+    (src_len >= ending_len) &&
+    (0 == strcmp(src + (src_len),ending));
+}

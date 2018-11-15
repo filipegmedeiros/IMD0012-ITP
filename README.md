@@ -12,7 +12,7 @@
 
 
 
----------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------
 
  ## PRIMEIRA UNIDADE
 
@@ -30,47 +30,25 @@
 | • [27/08/18 - Subroutines](https://github.com/filipegmedeiros/IMD0012-ITP/tree/master/Unidade01/Aulas/27ago/)           |
 
 
-| **Faltas:**           | 
-| --------------------- |
-| ~~24/08/18~~          |
-| ~~29/08/18~~          |
-| ~~31/08/18~~          |
-
----------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------
 
  ## SEGUNDA UNIDADE
 
- 
-| **ATIVIDADES AVALIATIVAS:**                                                                                            | 
-| ---------------------                                                                                                  |
-| • [Primeira Atividade](https://github.com/filipegmedeiros/IMD0012-ITP/tree/master/Unidade02/Atividade01)                |
-| • [Segunda Atividade](https://github.com/filipegmedeiros/IMD0012-ITP/tree/master/Unidade02/Atividade02)                 |
+  
+| **ATIVIDADES AVALIATIVAS:**                                                                                             | 
+| ---------------------                                                                                                   |
+| • [Primeira Atividade](https://github.com/filipegmedeiros/IMD0012-ITP/tree/master/Unidade02/Avaliativas/Atividade01)    | 
+| • [Segunda Atividade](https://github.com/filipegmedeiros/IMD0012-ITP/tree/master/Unidade02/Avaliativas/Atividade02)     |
+| • [Terceira Atividade](https://github.com/filipegmedeiros/IMD0012-ITP/tree/master/Unidade02/Avaliativas/Atividade03)    | 
 
-
-| **AULAS:**                                                                                                             | 
-| ---------------------                                                                                                  |
+**AULAS:**                                                                                                                | 
+| ---------------------                                                                                                   |
 | • [12/09/18 - Struct](https://github.com/filipegmedeiros/IMD0012-ITP/tree/master/Unidade02/Aulas/12set/)                |
 | • [24/09/18 - Recursividade](https://github.com/filipegmedeiros/IMD0012-ITP/tree/master/Unidade02/Aulas/24set/)         |
 | • [26/09/18 - Alocação Dinamica](https://github.com/filipegmedeiros/IMD0012-ITP/tree/master/Unidade02/Aulas/26set/)     |
 | • [28/09/18 - Linked List](https://github.com/filipegmedeiros/IMD0012-ITP/tree/master/Unidade02/Aulas/28set/)           |
-| • [01/10/18 - ????](https://github.com/filipegmedeiros/IMD0012-ITP/tree/master/Unidade02/Aulas/01out/)           |
-| • [08/10/18 - Recursividade Prática](https://github.com/filipegmedeiros/IMD0012-ITP/tree/master/Unidade02/Aulas/08out/)           |
-
-| **Faltas:**           | 
-| --------------------- |
-| ~~03/09/18~~          |
-| ~~05/09/18~~          |
-| ~~07/09/18~~          |
-| ~~10/09/18~~          |
-| ~~14/09/18~~          |
-| ~~17/09/18~~          |
-| ~~19/09/18~~          |
-| ~~21/09/18~~          |
-
----------------------------------------------------------------------------------------------------------------------------------
- 
-
- 
- 
+| • [01/10/18 - ????](https://github.com/filipegmedeiros/IMD0012-ITP/tree/master/Unidade02/Aulas/01out/)                  |
+| • [08/10/18 - Recursividade Prática](https://github.com/filipegmedeiros/IMD0012-ITP/tree/master/Unidade02/Aulas/08out/) |
 
 
+----------------------------------------------------------------------------------------------------------------------------
